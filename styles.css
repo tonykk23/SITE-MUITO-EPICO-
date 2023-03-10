@@ -1,11 +1,18 @@
-body {
+
+:root{
+    --COR-PRETO : #2f323a;
+    --COR-AZUL : #19b3d3;
+    --COR-BRANCA : #fff;
+}
+
+body { 
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
 }
 
 header {
-    background-color: #22242a;
+    background-color: var(--COR-PRETO);
     width: 100%;
     height: 30px;
     padding: 20px;
@@ -21,12 +28,12 @@ header {
 }
 
 .btn-sair {
-    color: #fff;
+    color: var(--COR-BRANCA);
     text-decoration: none;
     float: right;
     margin-right: 40px;
     margin-top: -30px;
-    background-color: #19b3d3;
+    background-color: var(--COR-AZUL);
     font-size: 15px;
     font-weight: 600px;
     border-radius: 5px;
@@ -64,13 +71,13 @@ nav{
 }
 
 nav h4{
-    color: #fff;
+    color: var(--COR-BRANCA);
     margin-top: 0;
     margin-bottom: 20px;
 }
 
 nav a{
-    color: #fff;
+    color: var(--COR-BRANCA);
     text-decoration: none;
     display: block;
     padding-left: 40px;
@@ -88,7 +95,7 @@ nav a:hover{
 
 #btnMenu{
     cursor: pointer;
-    color: #fff;
+    color: var(--COR-BRANCA);
     font-size: 20px;
     position: fixed;
     left: 250px;
@@ -113,7 +120,7 @@ nav a:hover{
 }
 
 .conteudo{
-    background-image: url('./fundo.png');
+    background-image: url('./fundo.jpg');
     background-position: center;
     height: 100vh;
     background-repeat: no-repeat;
